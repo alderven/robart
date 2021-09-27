@@ -1,8 +1,6 @@
+import sys
 import requests
 from requests.auth import HTTPBasicAuth
-
-# GitHub Token
-TOKEN = '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'
 
 # HTML table
 TABLE_HEADER = '''<table id="table_id" class="display">
@@ -45,13 +43,13 @@ def search(user, watchers):
 
     # 1. Make API call to GitHub
     if user:
-        r = requests.get(url=f'https://api.github.com/users/{user}/repos', auth=HTTPBasicAuth('', TOKEN))
+        r = requests.get(url=f'https://api.github.com/users/{user}/repos', auth=HTTPBasicAuth('', sys.argv[1]))
 
         # Generate table if user found
         if r.status_code == 200:
             table = TABLE_HEADER
             for repo in r.json():
-                if repo['watchers_count'] > watchers:  # filter min number by watchers
+                if repo['watchers_count'] >= watchers:  # filter min number by watchers
                     table += f"<td> <a target='blank' href='https://github.com/{user}/{repo['name']}'>{repo['name']}</a></td>" \
                              f"<td>{repo['pushed_at']}</td>" \
                              f"<td>{repo['created_at']}</td>" \
