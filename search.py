@@ -51,8 +51,8 @@ def search(user, watchers):
             for repo in r.json():
                 if repo['watchers_count'] >= watchers:  # filter min number by watchers
                     table += f"<td> <a target='blank' href='https://github.com/{user}/{repo['name']}'>{repo['name']}</a></td>" \
-                             f"<td>{repo['pushed_at']}</td>" \
                              f"<td>{repo['created_at']}</td>" \
+                             f"<td>{repo['pushed_at']}</td>" \
                              f"<td>{repo['size']}</td>" \
                              f"<td>{repo['language']}</td>" \
                              f"<td>{repo['watchers_count']}</td>" \
