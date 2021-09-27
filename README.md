@@ -21,4 +21,4 @@
 1. Press "Search" button
 1. You'll get table with list of repos. You can sort data by clicking on column name.
 
-![Search result](https://github.com/alderven/robart/blob/master/images/git_hub_navigator_result_table.png)
+![Search result](https://raw.githubusercontent.com/alderven/robart/master/images/git_hub_navigator_result_table.png)
