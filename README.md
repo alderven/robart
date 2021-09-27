@@ -1,7 +1,7 @@
 # 🔍 GitHub Navigator
 
 ## How to install
-1. Donwload and install Python: https://www.python.org/downloads/
+1. Download and install Python: https://www.python.org/downloads/
 1. Download this repo
 1. Install project dependencies: `pip install -r /path/to/requirements.txt`
 
