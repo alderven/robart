@@ -15,7 +15,7 @@
 ![](https://raw.githubusercontent.com/alderven/robart/master/images/git_hub_navigator.png)
 
 
-# How to use
+## How to use
 1. Enter the name of GitHub user
 1. [Optionally] Set minimal number of watchers
 1. Press "Search" button
