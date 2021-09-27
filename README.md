@@ -16,8 +16,8 @@
 
 
 # How to use
-1. Enter the name of GitHub user you want to navigate
-1. [Optionally] Set minimal number of watches:
+1. Enter the name of GitHub user
+1. [Optionally] Set minimal number of watchers
 1. Press "Search" button
 1. You'll get table with list of repos. You can sort data by clicking on column name.
 
