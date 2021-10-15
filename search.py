@@ -17,16 +17,6 @@ TABLE_HEADER = '''<table id="table_id" class="display">
 <tbody>
 '''
 
-TABLE_BODY = '''<tr>
-    <td>{name}</td>
-    <td>{created_at}</td>
-    <td>{pushed_at}</td>
-    <td>{size}</td>
-    <td>{language}</td>
-    <td>{watchers_count}</td>
-  </tr>
-'''
-
 TABLE_FOOTER = '</tbody></table>'
 
 
